@@ -1,25 +1,27 @@
-package firstProject;
+package d;
 import java.util.Scanner;
-
 
 public class Main {
 
 	public static void main(String[] args) {
 		
+		double x;
+		double y;  
+		double z; 
+		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("What is your name?");
-		String name = scanner.nextLine();
+		System.out.println("enter side x");
+		x = scanner.nextDouble();
 		
-		System.out.println("how old are you?");
-		int age = scanner.nextInt();
-		scanner.nextLine();
+		System.out.println("enter side y");
+		y = scanner.nextDouble();
 		
-		System.out.println("what is your favorite food?");
-		String food = scanner.nextLine();
+		z = Math.sqrt((x*x)+(y*y));
 		
-		System.out.println("hello "+ name);
-		System.out.println("you are "+age+" years old");
-		System.out.println("you like "+ food);
-	} 
+		System.out.println("the hypotenuse is "+ z);
+		
+		scanner.close();
+		
+	}
 }

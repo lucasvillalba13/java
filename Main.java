@@ -5,30 +5,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		// while loop
+	// for loops
 		
-		Scanner scanner = new Scanner(System.in);
-		//String name = "";
-		String gol = "";
+		//for (int i = 1; i<= 10; i++) {
+			//System.out.println(i);
+		//}
 		
-		//while(name.isBlank()) {
-		//	System.out.print("enter you name:  ");
-		//	name = scanner.nextLine();
-	//	}
-		
-		// do while
-		
-		do{
-			System.out.print("fue gol?:  ");
-			gol = scanner.nextLine();
-		}while (gol.isBlank());
-		
-		if (gol.isBlank() == true){
-			System.out.println("no fue gol");
-		} else if (gol.isBlank() == false) {
-			System.out.println("fue gol!");
+		for (int i = 10; i >= 0; i--) {
+		System.out.println(i);
 		}
 		
-		//System.out.println("hello "+ name);
+		System.out.println("happy new year!!");
 	}
 }

@@ -5,16 +5,28 @@ public class Main {
 
 	public static void main(String[] args) {
 
-	// for loops
+		// nested loops
 		
-		//for (int i = 1; i<= 10; i++) {
-			//System.out.println(i);
-		//}
+		Scanner scanner = new Scanner(System.in);
 		
-		for (int i = 10; i >= 0; i--) {
-		System.out.println(i);
+		int rows;
+		int columns;
+		String symbols = "";
+		
+		System.out.println("Enter number of rows");
+		rows = scanner.nextInt();
+		
+		System.out.println("Enter number of columns");
+		columns = scanner.nextInt();
+		
+		System.out.println("Enter symbol to use");
+		symbols = scanner.next();
+		
+		for (int i = 1; i<= rows; i++) {
+			System.out.println();
+			for(int j = 1; j <= columns; j++) {
+				System.out.print(symbols);
+			}
 		}
-		
-		System.out.println("happy new year!!");
 	}
 }

@@ -5,35 +5,30 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		/*int temp = 20;
-		
-		if (temp <= 15) {
-			System.out.println("hace frio");
-		} else if (temp>=28 ) {
-			System.out.println("hace calooooorrrr");
-		} else if (temp > 20 && temp < 27);{
-			System.out.println("ta hermoso afuera");
-		} else {
-			System.out.println("no salen ni las iguanas");
-		}
-		*/
+		// while loop
 		
 		Scanner scanner = new Scanner(System.in);
+		//String name = "";
+		String gol = "";
 		
-		System.out.println("you are playing a game! Press 'Q' or 'q' if you want to leave!");
-		String response = scanner.next();
+		//while(name.isBlank()) {
+		//	System.out.print("enter you name:  ");
+		//	name = scanner.nextLine();
+	//	}
 		
-		//if (response.equals("q") || response.equals ("Q")) {
-		//System.out.println("you have quited successfully");
-		//} else {
-		//	System.out.println("you are still plying the game");
-		//}
+		// do while
 		
-		if (!response.equals("q") && !response.equals ("Q")) {
-			System.out.println("you are still plying the game");
-		} else {
-			System.out.println("you have quited successfully");
+		do{
+			System.out.print("fue gol?:  ");
+			gol = scanner.nextLine();
+		}while (gol.isBlank());
+		
+		if (gol.isBlank() == true){
+			System.out.println("no fue gol");
+		} else if (gol.isBlank() == false) {
+			System.out.println("fue gol!");
 		}
-			
+		
+		//System.out.println("hello "+ name);
 	}
 }

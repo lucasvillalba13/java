@@ -1,24 +1,37 @@
 package d;
-import java.util.ArrayList;
+import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		// Array list. resizable array.
-		//se pueden agregar elementos despues de que se haya hecho la compilacion
-		// store reference data types
+		// Array list 2D listas dinamicas
 		
-		ArrayList<String> food = new ArrayList<String>();
+		ArrayList<ArrayList<String>> compras = new ArrayList();
+	
+		ArrayList<String> listaSuper = new ArrayList();
 		
-		food.add("panchos");
-		food.add("pizza");
-		food.add("asado");
+		listaSuper.add("pechuga de pollo");
+		listaSuper.add("aceite");
+		listaSuper.add("azucar");
+		listaSuper.add("harina");
+		listaSuper.add("vinito");
 		
-		for(int i=0; i<food.size(); i++) {
-			System.out.println(food.get(i));
-		}
-		 
+		
+		ArrayList<String> listaFeria = new ArrayList();
+		
+		listaFeria.add("frutas");
+		listaFeria.add("papas");
+		listaFeria.add("huevos");
+		listaFeria.add("cebolla");
+		listaFeria.add("zanahoria");
+		
+		compras.add(listaFeria);
+		compras.add(listaSuper);
+		
+		System.out.println(compras.get(1).get(3));
+		
+		
 	}
 }
 			

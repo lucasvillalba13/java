@@ -5,19 +5,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// metodos: los metodos son bloques de codigo que se ejecutan cuando los llamas.
-		// estan asociados a un objeto o clase.
+		// overloaded methods = metodos que comparten el mismo nombre pero tienen difernetes parametros
+		// method name + parametros = method signature
 		
-		String name = "lucas";
-		int age = 21;
+		int x = add(2,6,5,6);
 		
-		hello(name,age);
-	
+		System.out.println(x);
+
 	}
 	
-	static void hello(String title, int asd) {
-		System.out.println("hello "+ title);
-		System.out.println(asd);
+	static int add(int a, int b) {
+		System.out.println("#1");
+		return a + b;
 	}
-}
-			
+	
+	static int add(int a, int b, int c) {
+		System.out.println("#2");
+		return a + b + c;
+	}
+	
+	static int add(int a, int b, int c, int d) {
+		System.out.println("#3");
+		return a + b + c + d;
+	}
+	
+}			

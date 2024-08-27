@@ -5,22 +5,19 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		// for each
+		// metodos: los metodos son bloques de codigo que se ejecutan cuando los llamas.
+		// estan asociados a un objeto o clase.
 		
-		//String[] animals = {"perro","gato","elefante","leon"};
+		String name = "lucas";
+		int age = 21;
 		
-		ArrayList<String> animales = new ArrayList<String>();
-		
-		animales.add("gato");
-		animales.add("perro");
-		animales.add("conejo");
-		animales.add("loro");
-		animales.add("hormiga");
-		
-		for (String i : animales){
-			System.out.println(i);
-		}
-		
+		hello(name,age);
+	
+	}
+	
+	static void hello(String title, int asd) {
+		System.out.println("hello "+ title);
+		System.out.println(asd);
 	}
 }
 			

@@ -1,25 +1,24 @@
 package d;
+import java.util.ArrayList;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		//metodos de string
+		// Array list. resizable array.
+		//se pueden agregar elementos despues de que se haya hecho la compilacion
+		// store reference data types
 		
-		String name = "lucas";
+		ArrayList<String> food = new ArrayList<String>();
 		
-		//boolean result = name.equalsIgnoreCase("Lucas");
-		//int result = name.length();
-		//char result = name.charAt(0);
-		//int result = name.indexOf("u");
-		//boolean result = name.isEmpty();
-		//String result = name.toUpperCase();
-		//String result = name.toLowerCase();
-		//String result = name.trim();
-		String result = name.replace('u', 'o');
+		food.add("panchos");
+		food.add("pizza");
+		food.add("asado");
 		
-		System.out.println(result);
-		
+		for(int i=0; i<food.size(); i++) {
+			System.out.println(food.get(i));
+		}
+		 
 	}
 }
 			

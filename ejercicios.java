@@ -1,7 +1,7 @@
 package d;
 import java.util.*;
 
-public class Main {
+public class ejercicios {
 
 	public static void main(String[] args) {
 	

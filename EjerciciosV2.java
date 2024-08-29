@@ -1,8 +1,9 @@
 package d;
-import javax.swing.*;
+import javax.swing.JOptionPane;
+import java.util.*;
 
 public class EjerciciosV2 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 /*
                 // ejercicio 7
 
@@ -65,24 +66,68 @@ public class EjerciciosV2 {
 
 //                System.out.println("hoy hiciste un total de " + sumaVentas);
 
-            // ahora con JOPane //
+        // ahora con JOPane //
 
-            String texto = JOptionPane.showInputDialog("cuantas ventas hiciste hoy?");
+//            String texto = JOptionPane.showInputDialog("cuantas ventas hiciste hoy?");
+//
+//            int numVentas = Integer.parseInt(texto);
+//
+//            int sumaVentas = 0;
+//            for (int i = 0; i < numVentas; i++) {
+//                texto = JOptionPane.showInputDialog("introduce el precio de la venta" + (i + 1));
+//                int precioVentas = Integer.parseInt(texto);
+//
+//                sumaVentas += precioVentas;
+//            }
+//            System.out.println("vendiste un total de " +sumaVentas);
 
-            int numVentas = Integer.parseInt(texto);
+        // ejercicio 15
+//            int num;
+//            Scanner scanner = new Scanner(System.in);
+//
+//            do {
+//                System.out.println("introduce un numero mayor o igual a 0");
+//                num = scanner.nextInt();
+//                }while (num <= 0);
+//
+//            System.out.println(num);
 
-            int sumaVentas = 0;
-            for (int i = 0; i < numVentas; i++) {
-                texto = JOptionPane.showInputDialog("introduce el precio de la venta" + (i + 1));
-                int precioVentas = Integer.parseInt(texto);
+        // ejercicio 16
 
-                sumaVentas += precioVentas;
-            }
-            System.out.println("vendiste un total de " +sumaVentas);
+//        String contraseña = "olaminaxd";
+//
+//        final int INTENTOS = 3;
+//        boolean acierto=false;
+//
+//        String password;
+//        for (int i=0; i<3 && !acierto; i++){
+//            password = JOptionPane.showInputDialog("introduce una contraseña");
+//
+//            // comprobamos si coincide
+//            if (password.equals(contraseña)){
+//                System.out.println("Bien ahi! acertaste a la contraseña");
+//                acierto = true;
+//            }
+//        }
 
-            // ejercicio 15
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("introduce un dia de la semana");
+        String diaSemana = scanner.nextLine();
+        diaSemana = diaSemana.toLowerCase();
 
+        switch (diaSemana) {
+            case ("lunes"), ("martes"), ("miercoles"), ("jueves"), ("viernes"):
+                System.out.println("Es dia laboral :(");
+                break;
+            case ("sabado"), ("domingo"):
+                System.out.println("No se trabaja :D");
+                break;
+            default:
+                System.out.println("eso no es un dia :/");
+                break;
         }
     }
+}
+
 

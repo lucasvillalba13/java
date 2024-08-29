@@ -4,29 +4,17 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		
-		// overloaded methods = metodos que comparten el mismo nombre pero tienen difernetes parametros
-		// method name + parametros = method signature
-		
-		int x = add(2,6,5,6);
-		
-		System.out.println(x);
 
+		Car myCar = new Car();
+		Car macriMovil = new Car();
+
+		System.out.println(myCar.model);
+		System.out.println(myCar.year);
+
+		System.out.println(macriMovil.model);
+		System.out.println(macriMovil.color);
+
+		myCar.drive();
+		myCar.brake();
 	}
-	
-	static int add(int a, int b) {
-		System.out.println("#1");
-		return a + b;
-	}
-	
-	static int add(int a, int b, int c) {
-		System.out.println("#2");
-		return a + b + c;
-	}
-	
-	static int add(int a, int b, int c, int d) {
-		System.out.println("#3");
-		return a + b + c + d;
-	}
-	
 }			

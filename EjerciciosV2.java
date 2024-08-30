@@ -110,24 +110,39 @@ public class EjerciciosV2 {
 //            }
 //        }
 
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.println("introduce un dia de la semana");
+//        String diaSemana = scanner.nextLine();
+//        diaSemana = diaSemana.toLowerCase();
+//
+//        switch (diaSemana) {
+//            case ("lunes"), ("martes"), ("miercoles"), ("jueves"), ("viernes"):
+//                System.out.println("Es dia laboral :(");
+//                break;
+//            case ("sabado"), ("domingo"):
+//                System.out.println("No se trabaja :D");
+//                break;
+//            default:
+//                System.out.println("eso no es un dia :/");
+//                break;
 
-        System.out.println("introduce un dia de la semana");
-        String diaSemana = scanner.nextLine();
-        diaSemana = diaSemana.toLowerCase();
+        // ejercicion 18
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("introduce un numero");
+            int num1 = scanner.nextInt();
 
-        switch (diaSemana) {
-            case ("lunes"), ("martes"), ("miercoles"), ("jueves"), ("viernes"):
-                System.out.println("Es dia laboral :(");
-                break;
-            case ("sabado"), ("domingo"):
-                System.out.println("No se trabaja :D");
-                break;
-            default:
-                System.out.println("eso no es un dia :/");
-                break;
+            System.out.println("introduce otro numero");
+            int num2 = scanner.nextInt();
+
+            for (int i = 0; i < 10; i++) {
+            int numAleatorio = (int)Math.floor(Math.random()*(num1-num2)+num2);
+            System.out.println(numAleatorio);
+        }
+
+
         }
     }
-}
+
 
 

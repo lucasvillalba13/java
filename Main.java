@@ -1,20 +1,19 @@
 package d;
-import java.util.*;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Car myCar = new Car();
-		Car macriMovil = new Car();
+		Car Car1 = new Car(2020, "corolla", "black", 25000);
+		Car Car2 = new Car(2024, "etios", "white", 22000);
 
-		System.out.println(myCar.model);
-		System.out.println(myCar.year);
+		Car1.drive();
 
-		System.out.println(macriMovil.model);
-		System.out.println(macriMovil.color);
+		Pibes Lucas = new Pibes("lucas", 22, "programming", true, true);
+		Pibes Giuli = new Pibes("giuli", 21, "ts", true, true);
+		Pibes Tucu = new Pibes("Tucu", 21, "English", false, true);
 
-		myCar.drive();
-		myCar.brake();
+		System.out.println(Car1);
+		System.out.println(Lucas);
 	}
 }			

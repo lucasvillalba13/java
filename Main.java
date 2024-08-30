@@ -15,5 +15,7 @@ public class Main {
 
 		System.out.println(Car1);
 		System.out.println(Lucas);
+
+		Dice dice = new Dice();
 	}
 }			

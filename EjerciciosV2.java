@@ -280,36 +280,131 @@ public class EjerciciosV2 {
 //        System.out.println(number+1);
 
 // 27)
-        Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
-
-        int counter = 0;
-
-        while (num != -1){
-
-            counter++;
-
-            num = scanner.nextInt();
-
-        }
-        System.out.println("fin. pusiste un total de " + counter + "numeros");
-    }
-}
-//        Scanner sn=new Scanner(System.in);
-//        int num=sn.nextInt();
+//        Scanner scanner = new Scanner(System.in);
+//        int num = scanner.nextInt();
 //
-//        int contador=0;
+//        int counter = 0;
 //
-//        //Hasta que no se introduzca -1 no se sale
-//        while(num!=-1){
+//        while (num != -1){
 //
-//            contador++;
+//            counter++;
 //
-//            num=sn.nextInt(); //Pedimos de nuevo el número
+//            num = scanner.nextInt();
 //
 //        }
-//
-//        System.out.println("Fin, se ha introducido "+contador+" numeros");
-//
+//        System.out.println("fin. pusiste un total de " + counter + "numeros");
 //    }
 //}
+//   28     //conversor de temperatura
+//        Scanner termometer = new Scanner(System.in);
+//
+//        //definimos las variables
+//        double fahrenheit;
+//        double celsius;
+//
+//        //introducir las temperaturas
+//        System.out.println("qué temperatura necesitas convertir?");
+//        String temperature = termometer.nextLine();
+//        String temperatureLowerCase = temperature.toLowerCase();
+//        if (temperatureLowerCase.equals("celsius")){
+//            System.out.println("cual es la temperatura?");
+//            double temperatureCelsius = termometer.nextDouble();
+//            System.out.println("la temperatura en fahrenheit es de " +((temperatureCelsius*9/5)+32) + "grados");
+//        }
+//        else if (temperatureLowerCase.equals("fahrenheit")){
+//            System.out.println("cual es la temperatura?");
+//            double temperatureFahrenheit = termometer.nextDouble();
+//            System.out.println("la temperatura en celsius es de " +((temperatureFahrenheit-32)* 5/9) + "grados");
+//        }
+//        else System.out.println("eso no es un tipo de temperatura");
+//
+//    }
+
+
+//        Scanner termometer = new Scanner(System.in);
+//
+//        // Introducir el tipo de temperatura
+//        System.out.println("¿Qué temperatura necesitas convertir? (Celsius o Fahrenheit)");
+//        String temperatureType = termometer.nextLine().trim().toLowerCase();
+//
+//        // Pedimos la temperatura
+//        System.out.println("¿Cuál es la temperatura?");
+//        if (termometer.hasNextDouble()) {
+//            double inputTemperature = termometer.nextDouble();
+//
+//            double result;
+//            switch (temperatureType) {
+//                case "celsius":
+//                    result = celsiusToFahrenheit(inputTemperature);
+//                    System.out.println("La temperatura en Fahrenheit es de " + result + " grados");
+//                    break;
+//                case "fahrenheit":
+//                    result = fahrenheitToCelsius(inputTemperature);
+//                    System.out.println("La temperatura en Celsius es de " + result + " grados");
+//                    break;
+//                default:
+//                    System.out.println("Tipo de temperatura no reconocido. Por favor ingresa 'Celsius' o 'Fahrenheit'.");
+//                    break;
+//            }
+//        } else {
+//            System.out.println("Entrada no válida. Por favor, ingresa un número válido para la temperatura.");
+//        }
+//
+//        termometer.close();
+//    }
+//
+//    // Método estático para convertir de Celsius a Fahrenheit
+//    public static double celsiusToFahrenheit(double celsius) {
+//        return celsius * 9.0 / 5.0 + 32;
+//    }
+//
+//    // Método estático para convertir de Fahrenheit a Celsius
+//    public static double fahrenheitToCelsius(double fahrenheit) {
+//        return (fahrenheit - 32) * 5.0 / 9.0;
+//    }
+//  29       int suma = 0;
+//        for (int i = 1; i < 100 ; i++) {
+//            suma += i;
+//        }
+//        System.out.println("el resultado es " +suma);
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("introduce un numero");
+//        int numero = scanner.nextInt();
+//
+//        for (int i = 1; i <= 10; i++) {
+//            int resultado = numero *+ i;
+//            System.out.println(numero + " x " + i + " = " + resultado);
+//        }
+
+//        Escribe un programa que solicite al usuario 5 números enteros, los almacene en un array, y luego imprima los números en orden inverso.
+    // solicitamos los numeros
+        Scanner scanner = new Scanner(System.in);
+        int[] numbers = new int [10];
+
+
+        System.out.println("ingresa 10 numeros enteros");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print("Numero " + (i + 1)+ ": ");
+            numbers[i] = scanner.nextInt();
+        }
+        int maximo = numbers[0];
+        int minimo = numbers[0];
+
+//        System.out.println("Números en orden inverso:");
+//        for (int i = numbers.length - 1; i >= 0 ; i--) {
+//            System.out.println(numbers[i]);
+//        }
+//        int promedio = (numbers[0]+numbers[1]+numbers[2]+numbers[3]+numbers[4]) / 5;
+//        System.out.println(promedio);
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maximo){
+                maximo = numbers[i];
+            } else if (numbers[i] < minimo) {
+                minimo = numbers[i];
+            }
+        }
+        System.out.println(maximo);
+        System.out.println(minimo);
+    }
+}

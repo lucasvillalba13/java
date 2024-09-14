@@ -30,18 +30,23 @@ public class Main {
 //
 //		System.out.println(heladera[0]);
 
+//
+//		String[] newJeansSongs = {"Hype boy","CWY","Ditto","How sweet", "Supernatural"};
+//
+//		NewJeans Danielle = new NewJeans("Danielle", 19, "yellow", "Ador",newJeansSongs);
+//		NewJeans Minji = new NewJeans("Minji", 20, "blue", "Ador",newJeansSongs);
+//		NewJeans Hanni = new NewJeans("Hanni", 20, "pink", "Ador", newJeansSongs);
+//		NewJeans Hyein = new NewJeans("Hyein", 16, "violet", "Ador", newJeansSongs);
+//		NewJeans Haerin = new NewJeans("Haerin", 18, "green", "Ador", newJeansSongs);
+//
+//
+//
+//		System.out.println(Danielle.sing(2));
 
-		String[] newJeansSongs = {"Hype boy","CWY","Ditto","How sweet", "Supernatural"};
+		Garage garage = new Garage();
 
-		NewJeans Danielle = new NewJeans("Danielle", 19, "yellow", "Ador",newJeansSongs);
-		NewJeans Minji = new NewJeans("Minji", 20, "blue", "Ador",newJeansSongs);
-		NewJeans Hanni = new NewJeans("Hanni", 20, "pink", "Ador", newJeansSongs);
-		NewJeans Hyein = new NewJeans("Hyein", 16, "violet", "Ador", newJeansSongs);
-		NewJeans Haerin = new NewJeans("Haerin", 18, "green", "Ador", newJeansSongs);
+		Car car = new Car(2323, "Mercedes", "blue", 250);
 
-
-
-		System.out.println(Danielle.sing(2));
-
+		garage.park(car);
     }
 }			

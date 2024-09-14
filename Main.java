@@ -42,10 +42,6 @@ public class Main {
 //
 //
 //		System.out.println(Danielle.sing(2));
-
-		Hero hero1 = new Hero("batman", 42 , "$$$");
-		Hero hero2 = new Hero("pijonman", 35 , "verga");
-
-		System.out.println(hero2.toString());
+	Car car = new Car();
     }
 }			

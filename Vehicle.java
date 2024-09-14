@@ -1,12 +1,10 @@
 package d;
 
-public class Vehicle extends Garage{
+public abstract class Vehicle{
 
     double speed;
 
-    void go() {
-        System.out.println("this vehicle is moving");
-    }
+    abstract void go();
 
     void stop() {
         System.out.println("this vehicle is stopped");

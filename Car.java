@@ -7,7 +7,7 @@ public class Car extends Vehicle{
     String color;
     double price;
 
-    Car(int year, String model, String color, int price){
+    Car(){
         this.model = model;
         this.year = year;
         this.color = color;
@@ -20,6 +20,10 @@ public class Car extends Vehicle{
 
     }
 
+    @Override
+    void go(){
+        System.out.println("the car is going dea");
+    }
 
     void drive(){
         System.out.println("you drive the "+ model);

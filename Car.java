@@ -1,6 +1,6 @@
 package d;
 
-public class Car {
+public class Car extends Vehicle{
 
     String model;
     int year;

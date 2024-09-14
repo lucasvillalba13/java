@@ -43,10 +43,9 @@ public class Main {
 //
 //		System.out.println(Danielle.sing(2));
 
-		Garage garage = new Garage();
+		Hero hero1 = new Hero("batman", 42 , "$$$");
+		Hero hero2 = new Hero("pijonman", 35 , "verga");
 
-		Car car = new Car(2323, "Mercedes", "blue", 250);
-
-		garage.park(car);
+		System.out.println(hero2.toString());
     }
 }			

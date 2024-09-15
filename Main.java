@@ -42,6 +42,8 @@ public class Main {
 //
 //
 //		System.out.println(Danielle.sing(2));
-	Car car = new Car();
+	Car car = new Car("fiat", 2023,"gris",15000);
+
+		System.out.println(car.getModel());
     }
 }			

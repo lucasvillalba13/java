@@ -14,6 +14,10 @@ public class Car extends Vehicle {
         this.setPrice(price);
     }
 
+    public Car(Car car) {
+        this.copy(car);
+    }
+
     @Override
     public String toString() {
         return "Car [model= " + model + " year = " + year + " color = " + color + " price = " + price;
@@ -45,6 +49,10 @@ public class Car extends Vehicle {
         return color;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public void setModel(String model) {
         this.model = model;
     }
@@ -60,4 +68,12 @@ public class Car extends Vehicle {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    public void copy(Car car) {
+        this.setModel(car.getModel());
+        this.setColor(car.getColor());
+        this.setYear(car.getYear());
+        this.setPrice(car.getPrice());
+    }
+
 }

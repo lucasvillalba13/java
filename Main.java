@@ -42,8 +42,22 @@ public class Main {
 //
 //
 //		System.out.println(Danielle.sing(2));
-	Car car = new Car("fiat", 2023,"gris",15000);
+	Car car1 = new Car("fiat", 2023,"gris",15000);
+	Car car2 = new Car(car1);
 
-		System.out.println(car.getModel());
+//	car2.copy(car1);
+
+		System.out.println(car1);
+		System.out.println(car2);
+
+		System.out.println(car1.getModel());
+		System.out.println(car1.getYear());
+		System.out.println(car1.getColor());
+		System.out.println(car1.getPrice());
+
+		System.out.println(car2.getModel());
+		System.out.println(car2.getYear());
+		System.out.println(car2.getColor());
+		System.out.println(car2.getPrice());
     }
 }			

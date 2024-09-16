@@ -2,6 +2,13 @@ package d;
 
 public class Car extends Vehicle {
 
+    public Car(String licensePlate) {
+        super(licensePlate, "Car");
+    }
+
+
+
+/*
     private String model;
     private int year;
     private String color;
@@ -24,10 +31,6 @@ public class Car extends Vehicle {
 
     }
 
-    @Override
-    void go() {
-        System.out.println("the car is going dea");
-    }
 
     void drive() {
         System.out.println("you drive the " + model);
@@ -75,5 +78,6 @@ public class Car extends Vehicle {
         this.setYear(car.getYear());
         this.setPrice(car.getPrice());
     }
+*/
 
 }

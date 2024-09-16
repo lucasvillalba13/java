@@ -1,12 +1,32 @@
 package d;
 
-public abstract class Vehicle{
+import java.time.LocalDateTime;
+import java.time.Duration;
 
-    double speed;
+public class Vehicle{
+    private String licensePlate;
+    private String vehicleType;
+    private LocalDateTime entryTime;
 
-    abstract void go();
+    public Vehicle(String licencePlate, String vehicleType){
+        this.licensePlate = licencePlate;
+        this.vehicleType = vehicleType;
+        this.entryTime = LocalDateTime.now();
+    }
 
-    void stop() {
-        System.out.println("this vehicle is stopped");
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+    public String getVehicleType() {
+        return vehicleType;
+    }
+    public LocalDateTime getEntryTime() {
+        return entryTime;
+    }
+
+    public long calculateStoredTime(){
+        LocalDateTime now = LocalDateTime.now();
+        Duration duration = Duration.between(entryTime, now);
+        return duration.toMinutes();
     }
 }

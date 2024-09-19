@@ -8,8 +8,8 @@ public class Vehicle{
     private String vehicleType;
     private LocalDateTime entryTime;
 
-    public Vehicle(String licencePlate, String vehicleType){
-        this.licensePlate = licencePlate;
+    public Vehicle(String licensePlate, String vehicleType){
+        this.licensePlate = licensePlate;
         this.vehicleType = vehicleType;
         this.entryTime = LocalDateTime.now();
     }

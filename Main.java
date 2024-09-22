@@ -1,7 +1,5 @@
 package d;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 
 public class Main {
@@ -17,10 +15,22 @@ public class Main {
 //			System.out.println("this file.txt does not exist");
 //		}
 
+//        try {
+//            FileWriter writer = new FileWriter("file.txt");
+//            writer.write("dani sos el amor de mi vidaaaaa~~");
+//            writer.close();
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
+
         try {
-            FileWriter writer = new FileWriter("file.txt");
-            writer.write("dani sos el amor de mi vidaaaaa~~");
-            writer.close();
+            FileReader reader = new FileReader("file.txt");
+			int data = reader.read();
+			while (data != -1){
+				System.out.print((char)data);
+				data = reader.read();
+			}
+			reader.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
